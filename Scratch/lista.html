@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nossa Rede</title>
+		<link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+		<header>
+				AQUI COMEÇA O SITE
+		</header>
+		<main>
+				<section data-aos="fade-up">
+						<div class="perfil_CLASS">
+								<div class="divImg_CLASS">
+									<img src="./IMAGES/Perfil_LF.png" alt="PERFIL_LF">
+								<!--
+								S-->	
+								</div>
+								<div class="descri_CLASS">
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias modi fuga tempora velit, dolor fugit ut, nesciunt quia amet enim sequi iste vero? Fugiat nostrum vero tempora modi quas ipsam!</p>
+										<a href='./PortFolio_PC.pdf'> Portfolio Digital </a>
+										<a href="http://lufipe.github.io/ArchiViz-LuizFelipe">Portfolio Online</a>
+										<button onclick="showDesc('flavorLF_ID')">Mostrar mais</button>
+								</div>
+						</div>
+						<div class="flavorText_CLASS" id="flavorLF_ID">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti possimus fugit autem, neque sint odit ab, amet minus blanditiis veritatis nisi obcaecati sequi minima perferendis dolor ratione provident eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta fuga laudantium officiis, nihil neque nesciunt placeat quibusdam commodi corporis exercitationem error, ut distinctio aperiam, mollitia veritatis! Fugit, vitae quo?</div>
+				</section>
+				<section style="flex-direction: row-reverse;" data-aos="fade-up">
+					<div class="perfil_CLASS">
+						<div class="descri_CLASS">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias modi fuga tempora velit, dolor fugit ut, nesciunt quia amet enim sequi iste vero? Fugiat nostrum vero tempora modi quas ipsam!</p>
+								<p>Link para Portfolio</p>
+								<p>Link para site</p>
+								<button onclick="showDesc('flavorRayra_ID')">Mostrar mais</button>
+						</div>
+						<div class="divImg_CLASS">
+							<img src="./IMAGES/Perfil_Rayra.png" alt="PERFIL_LF">
+							<!--
+							-->
+						</div>
+					</div>
+					<div class="flavorText_CLASS" id="flavorRayra_ID">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti possimus fugit autem, neque sint odit ab, amet minus blanditiis veritatis nisi obcaecati sequi minima perferendis dolor ratione provident eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias voluptates, cupiditate molestiae natus a porro ratione aut consectetur, et dolores cum perferendis enim magni recusandae laborum quos? Ipsum, necessitatibus.</div>
+
+				</section>
+				<section data-aos="fade-up">
+					<div class="perfil_CLASS">
+						<div class="divImg_CLASS">
+							<img src="./IMAGES/Perfil_Thaila.png" alt="PERFIL_LF">
+							<!--
+							-->
+						</div>
+						<div class="descri_CLASS">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias modi fuga tempora velit, dolor fugit ut, nesciunt quia amet enim sequi iste vero? Fugiat nostrum vero tempora modi quas ipsam!</p>
+								<p>Link para Portfolio</p>
+								<p>Link para site</p>
+								<button onclick="showDesc('flavorThaila_ID')">Mostrar mais</button>
+						</div>
+					</div>
+					<div class="flavorText_CLASS" id="flavorThaila_ID">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti possimus fugit autem, neque sint odit ab, amet minus blanditiis veritatis nisi obcaecati sequi minima perferendis dolor ratione provident eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quas itaque vitae impedit eaque non repudiandae veniam fugit ducimus consectetur suscipit dolores a, excepturi nemo nulla voluptatem, quos ex quibusdam!</div>
+				</section>
+		</main>
+		<footer>
+				
+		</footer>
+		<script>
+			function showDesc(desc_ID){
+				let desc = window.document.getElementById(desc_ID);
+				if (desc.style.display == 'flex') {
+					desc.style.display = 'none';
+				}
+				else if ((desc.style.display == '')||(desc.style.display == 'none')) {
+					desc.style.display = 'flex';
+				}
+			}
+		</script>
+		
+		<script src="./JS/aos-master/dist/aos.js"></script>
+		<script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+</body>
+</html>
