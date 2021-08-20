@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./CSS/PERFIL_style.css">
+	<title>Estudante</title>
+</head>
+<body>
+	<header></header>
+	<main>
+		<section id="PerfNot_ID">
+			<section id="Perf_ID">
+				<form id="alterImgPerf_ID" action="" method="post" enctype="multipart/form-data">
+					<div id="imgPerfil_ID"></div>
+					<input type="file" name="IMGPERFIL">
+					<button class="btnSub_CLASS" type="submit">ATUALIZAR</button>
+
+				</form>
+				<form id="alterInst_ID" action="" method="post">
+					<div class="titForm_CLASS">
+						<p>DADOS PESSOAIS</p>
+						<hr>
+					</div>
+					<div class="inputText_CLASS" id="alterName_ID" >
+						<input type="text" name="NOME" value="nome">
+						<button class="btnAjuda_CLASS">?</button>
+					</div>
+					<div class="inputText_CLASS" id="alterEmail_ID" >
+						<input type="text" value="email">
+						<button class="btnAjuda_CLASS">?</button>
+					</div>
+					<div class="inputText_CLASS" id="alterTel_ID" >
+						<div>
+							(<input id="codigoArea_ID" class="input_CLASS" type="text" name="CODIGO_AREA">) <input id="tel_ID" class="input_CLASS" type="text" name="TELEFONE">
+						</div>
+						<button class="btnAjuda_CLASS">?</button>
+					</div>
+					<div id="alterForma_ID" >
+						<label id="labelInst_ID" class="labelForma_CLASS" for="INSTITUTO">INSTITUTO:</label>
+						<select id="selectInst_ID" class="selectForma_CLASS" name="INSTITUTO" id="">
+							<option value="UNIJUAZEIRO">UniJuazeiro</option>
+							<option value="FAP">Faculdade Paraiso</option>
+						</select>					
+						<label id="labelSem_ID" class="labelForma_CLASS" for="SEMESTRE">SEMESTRE:</label>
+						<select id="selectSem_ID" class="selectForma_CLASS" name="SEMESTRE" id="SEMESTRE_ID">
+							<option value="1">1º</option>
+							<option value="2">2º</option>
+							<option value="3">3º</option>
+							<option value="4">4º</option>
+							<option value="5">5º</option>
+							<option value="6">6º</option>
+							<option value="7">7º</option>
+							<option value="8">8º</option>
+							<option value="9">9º</option>
+							<option value="10">10º</option>
+							<option value="NAOREGULAR">Não Regular</option>
+						</select>
+					</div>
+					<button id="btnAlterInst_ID" class="btnSub_CLASS" type="submit">ATUALIZAR</button>
+				</form>
+				<form id="alterSenha_ID" action="" method="post">
+					<div>
+						<div class="inputText_CLASS" >
+							<p>ALTERAR SENHA</p>
+							<button class="btnAjuda_CLASS">?</button>
+						</div>
+						<hr>
+					</div>
+					<label for="SENHA01">SENHA ATUAL</label>
+					<input class="inputSenha_CLASS" type="password" name="SENHA01">
+					<label for="SENHA02">NOVA SENHA</label>
+					<input class="inputSenha_CLASS" type="password" name="SENHA02">
+					<label for="SENHA03">REPETIR NOVA SENHA</label>
+					<input class="inputSenha_CLASS" type="password" name="SENHA03">
+					<button class="btnSub_CLASS" type="submit">ALTERAR</button>
+				</form>
+				<form id="alterArq_ID" action="">
+					<div class="titForm_CLASS" id="titForm_ID">
+						<p>DADOS DE FORMAÇÃO</p>
+						<hr>
+					</div>
+					<div id="alterPortFolio_ID"  enctype="multipart/form-data">
+						<label class="labelForma_CLASS" for="PORTFOLIO">PORTFOLIO:</label>
+						<input type="file" name="PORTFOLIO">
+					</div>
+					<div id="alterCurriculo_ID"  enctype="multipart/form-data">
+						<label class="labelForma_CLASS" for="CURRICULO">CURRICULO:</label>
+						<input type="file" name="CURRICULO">
+					</div>
+					<div class="inputText_CLASS" id="alterSite_ID" >
+						<input id="linkSite_ID" type="text" name="SITE" value="SITE">
+						<button class="btnAjuda_CLASS">?</button>
+					</div>
+					<button class="btnSub_CLASS" id="btnAlterArq_ID" type="submit">ATUALIZAR</button>
+				</form>						
+			</section>
+			<section id="Not_ID">
+				<div>
+					<button class="notButn_CLASS">MENSAGENS</button>
+					<button class="notButn_CLASS">NOTIFICAÇÕES</button>
+				</div>
+				<div class="notDiv_CLASS">MENSAGENS</div>
+				<div class="notDiv_CLASS">VIZUALIZADOR</div>
+
+			</section>
+		</section>
+	</main>
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,297 @@
+			/*	 ELEMENT	*/
+			/*				*/
+
+body{
+	margin: 0;
+}
+
+p, hr{
+	margin: 0;
+	padding: 0;
+}
+
+form{
+	margin: .5em;
+	padding: 1em;
+	border-radius: 2em;
+	background-color: rgba(217, 177, 143, 1);
+	box-shadow: 0 0 .5em rgba(89,59, 42, 1);
+}
+
+label{
+	font-size: .8em;
+}
+
+input{
+	width: 95%;
+	height: 1.7em;
+	border-radius: 1.5em;
+	padding-left: 1em;
+	font-size: .8em;
+	background-color: rgba(166, 156, 148, .3);
+	box-shadow: inset 0 0 .3em rgba(89,59, 42, .8);
+	border-style: none;
+}
+
+button{
+	background-color: rgba(204,192, 182, .8);
+	box-shadow: inset 0 0 .3em rgba(89,59, 42, .8);
+	border-style: none;
+}
+
+select{
+	background-color: rgba(204,192, 182, .8);
+	box-shadow: inset 0 0 .3em rgba(89,59, 42, .8);
+	border-style: none;
+	width: 60%;
+	height: 2em;
+	align-self: center;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	border-radius: 1em;
+}
+
+			/*				*/
+			/*	  CLASS		*/
+			/*				*/
+
+.inputText_CLASS{
+	display: grid;
+	grid-template-columns: 90% 10%;
+	align-items: center;
+}
+
+.inputSenha_CLASS{
+	width: 86%;
+}
+
+.btnSub_CLASS{
+	height: 2.1em;
+	width: 30%;
+	margin: auto;
+	border-radius: 1.5em;
+}
+
+.btnAjuda_CLASS{
+	max-height: 1.3em;
+	width: 1.2em;
+	margin-left: .2em;
+	background-color: rgba(140, 91, 63, .1);
+	border-radius: 1.5em;
+	border-style: none;
+	box-shadow: inset 0 0 .2em rgba(89,59, 42, .8);
+	font-size: 1.2em;
+}
+
+.titForm_CLASS{
+	font-size: 1.1em;
+}
+
+.notButn_CLASS{
+	height: 50%;
+	width: 30%;
+	margin-top: 4em;
+	margin-left: 4em;
+	background-color: rgba(217, 177, 143, 1);
+	box-shadow: 0 0 .5em rgba(89,59, 42, 1);
+	border-radius: 2em;
+}
+
+.notDiv_CLASS{
+	margin: .5em;
+	padding: 1em;
+	border-radius: 2em;
+	background-color: rgba(217, 177, 143, 1);
+}
+
+
+			/*				*/
+			/*		ID		*/
+			/*				*/
+
+section#PerfNot_ID{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	height: 100%;
+	background-color: rgba(140, 91, 63, 1);
+	font-size: 1em;
+}
+
+
+		/* AREA DO USUARIO	*/
+
+section#Perf_ID{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 40% 40% 20%;
+	min-height: 45em;
+	background-color: rgba(217, 123, 41, 1);
+	box-shadow: inset 0 0 .2em rgba(89,59, 42, .8);
+	border-radius: 2em;
+	padding: .5em;
+}
+
+
+		/*	FORMULARIO DE IMAGEM DE PERFIL	*/
+form#alterImgPerf_ID{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	padding: 1em;
+	display: grid;
+	grid-template-rows: 80% 5% 6% 9%;
+	align-items: center;
+}
+
+div#imgPerfil_ID{
+	max-width: 100%;
+	height: 100%;
+	background-image: url(../IMAGES/Perfil_LF.png);
+	background-repeat: no-repeat;
+	background-size:cover ;
+	background-position: center;
+	border-radius: 2em;
+}
+
+
+		/*	FORMULARIO DE DADOS PESSOAIS	*/
+form#alterInst_ID{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	display: grid;
+	grid-template-rows:11% repeat(3,16.6%) 11% 11% 17%;
+}
+
+div#alterName_ID{
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+div#alterEmail_ID{
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+div#alterTel_ID{
+	grid-row-start: 4;
+	grid-row-end: 5;
+	align-items: center;
+}
+
+input#codigoArea_ID{
+	width: 10%;
+   }
+
+input#tel_ID{
+	width: 77%;
+}
+
+div#alterForma_ID{
+	grid-row-start: 5;
+	grid-row-end: 7;
+	display: grid;
+	grid-template-columns: repeat(4,25%);
+	grid-template-rows: 30% 70%;
+}
+
+label#labelSem_ID{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+select#selectSem_ID{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	width: 20%;
+}
+
+label#labelInst_ID{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+select#selectInst_ID{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	width: 80%;
+}
+
+
+button#btnAlterInst_ID{
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+		/*	FORMULARIO DE ALTERAR SENHA	*/
+form#alterSenha_ID{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	display: grid;
+}
+
+
+		/*	FORMULARIO DE ALTERAR ARQUIVOS	*/
+form#alterArq_ID{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: 22% 45% 33%;
+}
+
+div#titForm_ID{
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+div#alterCurriculo_ID{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+div#alterPortFolio_ID{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+div#alterSite_ID{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+button#btnAlterArq_ID{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	width: 95%;
+}
+
+/*	FORMULARIO DE IMAGEM DE PERFIL	*/
+
+section#Not_ID{
+	display: grid;
+	grid-template-rows: 10% 30% 60%;
+}

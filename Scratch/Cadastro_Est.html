@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./CSS/FORM_style.css">
+	<title>Cadastro Estudante</title>
+</head>
+<body>
+	<header></header>
+	<main>
+		<section class="sectionSign_CLASS">
+			<img src="Back4.jpg" alt="SEM IMAGEM">
+			<form action="" method="post" style="display: grid;">
+				<div class="divCadGeral_CLASS">
+					<label class="label_CLASS" for="NOME">NOME COMPLETO</label>
+					<button class="btnAjuda_CLASS">?</button>
+				</div>
+				<input class="input_CLASS" type="text" name="NOME">
+
+				<div class="divCadGeral_CLASS">
+					<label class="label_CLASS" for="TELEFONE">TELEFONE</label>
+					<button class="btnAjuda_CLASS">?</button>
+				</div>
+				<div id="divTEL_ID">
+					(<input id="codigoArea_ID" class="input_CLASS" type="text" name="CODIGO_AREA">) <input id="tel_ID" class="input_CLASS" type="text" name="TELEFONE">
+				</div>
+
+				<div class="divSelec_CLASS">
+					<label class="label_CLASS" for="INSTITUTO">INSTITUTO</label>
+					<select name="INSTITUTO" id="INSTITUTO_ID">
+						<option value="UNIJUAZEIRO">UniJuazeiro</option>
+						<option value="FAP">Faculdade Paraiso</option>
+					</select>
+					
+				</div>
+
+				<div class="divSelec_CLASS">
+					<label class="label_CLASS" for="SEMESTRE">SEMESTRE</label>
+					<select name="SEMESTRE" id="SEMESTRE_ID">
+						<option value="1">1º</option>
+						<option value="2">2º</option>
+						<option value="3">3º</option>
+						<option value="4">4º</option>
+						<option value="5">5º</option>
+						<option value="6">6º</option>
+						<option value="7">7º</option>
+						<option value="8">8º</option>
+						<option value="9">9º</option>
+						<option value="10">10º</option>
+						<option value="NAOREGULAR">Não Regular</option>
+					</select>
+				</div>
+				<button class="btnSub_CLASS" type="submit">CADASTRAR</button>
+			</form>
+		</section>
+	</main>
+	<footer></footer>
+</body>
+</html>
