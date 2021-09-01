@@ -5,12 +5,18 @@
 
 body{
 	margin: 0;
+	background-color: rgba(140, 91, 63, 1);
 }
 
+/*
+*/
+main{
+	display: grid;
+	grid-template-rows: 45em 10em;
+}
 section{
 	display: grid;
 	padding: 1em;
-	background-color: rgba(140, 91, 63, 1);
 }
 
 p, hr{
@@ -92,6 +98,22 @@ span{
 			/*	  CLASS		*/
 			/*				*/
 
+
+.super_CLASS{
+	position: absolute;
+	z-index: 3;
+}
+
+.super_CLASS:hover + .sectionBorder_CLASS{
+	background-color: rgba(217, 123, 41, 1);
+	box-shadow: inset 0 0 .2em rgba(89,59, 42, .8);
+	z-index: 2;
+}
+
+.sectionBorder_CLASS{
+
+	border-radius: 2em;
+}
 .inputText_CLASS{
 	display: grid;
 	grid-template-columns: 90% 10%;
@@ -153,6 +175,11 @@ span{
 	background-color: rgba(1, 1, 1, .8);
 }
 
+.infoContainer_CLASS:hover .tipInfo_CLASS{
+	opacity: 1;
+	z-index: 1;
+}
+
 .titForm_CLASS{
 	font-size: 1.1em;
 }
@@ -187,14 +214,63 @@ span{
 	background-color: black;
 }
 
+.formPop_CLASS{
+	position: relative;
+	width: 30em;
+}
+
+.plusBtnDiv_CLASS{
+	height: 1.5em;
+}
+
+.formExpRede_CLASS{
+	display: grid;
+	background-color: white; 
+	border-style:solid;
+	border-width: .2em;
+	height: 100%;
+}
+
+.expRedText_CLASS{
+	margin-top: auto;
+}
+
+.tipInfoExp_CLASS{
+	left: auto;
+}
+
+.labelExpRede_CLASS{
+	padding-top: 1em;
+}
+
+.td5_CLASS{
+	width: 5%;
+}
+
+.td10_CLASS{
+	width: 10%;
+}
+
+.td30_CLASS{
+	width: 30%;
+}
+
+
 			/*				*/
 			/*		ID		*/
 			/*				*/
 
+div#smokeScreen_ID{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(1, 1, 1, .6);
+	z-index: 1;
+}
+
 section#PerfNot_ID{
 	grid-template-columns: 50% 50%;
 	height: 45em;
-	background-color: rgba(140, 91, 63, 1);
 	font-size: 1em;
 	padding: 0;
 }
@@ -202,15 +278,18 @@ section#PerfNot_ID{
 
 		/* AREA DO USUARIO	*/
 
+div#superPerf_ID{
+	width: 50%;
+	height: 45em;
+}
+
 section#Perf_ID{
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-template-columns: 40% 60%;
 	grid-template-rows: 40% 40% 20%;
 	
-	background-color: rgba(217, 123, 41, 1);
-	box-shadow: inset 0 0 .2em rgba(89,59, 42, .8);
-	border-radius: 2em;
+	
 	padding: .5em;
 }
 
@@ -251,11 +330,6 @@ form#alterInst_ID{
 div#alterName_ID{
 	grid-row-start: 2;
 	grid-row-end: 3;
-}
-
-.infoContainer_CLASS:hover span#tipName_ID{
-	opacity: 1;
-	z-index: 1;
 }
 
 div#alterEmail_ID{
@@ -383,9 +457,7 @@ div#alterSite_ID{
 	grid-row-end: 4;
 }
 
-.infoContainer_CLASS:hover span#tipSite_ID{
-	opacity: 1;
-	z-index: 1;
+span#tipSite_ID{
 	left: 36%;
 }
 
@@ -398,6 +470,12 @@ button#btnAlterArq_ID{
 }
 
 /*	FORMULARIO DE MENSAGENS E NOTIFICAÇÕES	*/
+
+div#superNot_ID{
+	left:50%;
+	width: 50%;
+	height: 45em;
+}
 
 section#Not_ID{
 	grid-template-rows: 5% 34.1% 1% 59.9%;
@@ -415,6 +493,12 @@ div#viz_ID{
 
 /*	FORMULARIO DE EXPERIENCIA E REDES	*/
 
+div#superER_ID{
+	top: 80%;
+	width: 99%;
+	height: 10em;
+}
+
 section#expRede_ID{
 	display: flex;
 	padding: .5em;
@@ -426,4 +510,18 @@ div#divTabEXP_ID{
 
 div#divTabRED_ID{
 	width: 35%;
+}
+
+div#addRede_ID{
+	display: none;
+	bottom:1130%;
+	left: -770%; 
+	height: 10em;
+}
+
+div#addExp_ID{
+	display: none;
+	bottom: 2000%;
+	left: -430%;
+	height: 23em;
 }

@@ -10,8 +10,10 @@
 <body>
 	<header></header>
 	<main>
+		<div id="smokeScreen_ID"></div>
 		<section id="PerfNot_ID">
-			<section id="Perf_ID">
+			<div class="super_CLASS" id="superPerf_ID"></div>
+			<section class="sectionBorder_CLASS" id="Perf_ID">
 				<form id="alterImgPerf_ID" action="" method="post" enctype="multipart/form-data">
 					<div id="imgPerfil_ID"></div>
 					<input type="file" name="IMGPERFIL">
@@ -27,14 +29,14 @@
 						<input type="text" name="NOME" value="nome">
 						<div class="infoContainer_CLASS">
 							<span class="spanAjuda_CLASS">?</span>
-							<span class="tipInfo_CLASS" id="tipName_ID">NOME</span>
+							<span class="tipInfo_CLASS">NOME</span>
 						</div>
 					</div>
 					<div class="inputText_CLASS" id="alterEmail_ID" >
 						<input type="text" value="email">
 						<div class="infoContainer_CLASS">
 							<span class="spanAjuda_CLASS">?</span>
-							<span class="tipInfo_CLASS" id="tipEmail_ID">EMAILP</span>
+							<span class="tipInfo_CLASS">EMAILP</span>
 						</div>
 					</div>
 					<div class="inputText_CLASS" id="alterTel_ID" >
@@ -43,7 +45,7 @@
 						</div>
 						<div class="infoContainer_CLASS">
 							<span class="spanAjuda_CLASS">?</span>
-							<span class="tipInfo_CLASS" id="tipTel_ID">TEL</span>
+							<span class="tipInfo_CLASS">TEL</span>
 						</div>
 					</div>
 					<div id="alterForma_ID" >
@@ -75,7 +77,7 @@
 							<p>ALTERAR SENHA</p>
 							<div class="infoContainer_CLASS">
 								<span class="spanAjuda_CLASS">?</span>
-								<span class="tipInfo_CLASS" id="tipSenha_ID">SENHA</span>
+								<span class="tipInfo_CLASS">SENHA</span>
 							</div>
 						</div>
 						<hr>
@@ -111,7 +113,8 @@
 					<button class="btnSub_CLASS" id="btnAlterArq_ID" type="submit">ATUALIZAR</button>
 				</form>						
 			</section>
-			<section id="Not_ID">
+			<div class="super_CLASS" id="superNot_ID"></div>
+			<section class="sectionBorder_CLASS" id="Not_ID">
 				<div style="display: flex;">
 					<button class="notButn_CLASS">MENSAGENS</button>
 					<button class="notButn_CLASS">NOTIFICAÇÕES</button>
@@ -119,10 +122,10 @@
 				<div class="div_CLASS">
 					<table>
 						<tr>
-							<td>REMETENTE</td> 
+							<td class="td30_CLASS">REMETENTE</td> 
 							<td>ASSUNTO</td> 
-							<td>HORA</td> 
-							<td>DATA</td>
+							<td class="td10_CLASS">HORA</td> 
+							<td class="td10_CLASS">DATA</td>
 						</tr>
 						<tr>
 							<th></th>
@@ -140,31 +143,78 @@
 
 			</section>
 		</section>
-		<section id="expRede_ID">
+		<div class="super_CLASS" id="superER_ID"></div>
+		<section class="sectionBorder_CLASS" id="expRede_ID">
 			<div class="div_CLASS erDiv_CLASS" id="divTabEXP_ID">
 				<div>
 					<div class="inputText_CLASS" >
 						<p>EXPERIENCIAS</p>
-						<button class="btnAdd_CLASS">+</button>
+						<div class="plusBtnDiv_CLASS">
+							<button class="btnAdd_CLASS">+</button>
+							<div class="formPop_CLASS" id="addExp_ID">
+								<form action="" method="post" class="formExpRede_CLASS">
+									<div class="titForm_CLASS">
+										<p>Experiencias</p>
+										<hr>
+									</div>
+									<label for="ESCRITORIO" class="labelExpRede_CLASS">Escritório:</label>
+									<div class="inputText_CLASS expRedText_CLASS" >
+										<input type="text" name="ESCRITORIO" value="Escritório">
+										<div class="infoContainer_CLASS">
+											<span class="spanAjuda_CLASS">?</span>
+											<span class="tipInfo_CLASS tipInfoExp_CLASS">Escritório</span>
+										</div>
+									</div>
+									<label for="DESCRICAO" class="labelExpRede_CLASS">Descrição:</label>
+									<div class="inputText_CLASS expRedText_CLASS" >
+										<input type="text" name="DESCRICAO" style="height: 10em;text-align: left;" value="Escreva algo sobre você">
+										<div class="infoContainer_CLASS">
+											<span class="spanAjuda_CLASS">?</span>
+											<span class="tipInfo_CLASS tipInfoExp_CLASS">Descrição</span>
+										</div>
+									</div>
+									<label for="INICIO" class="labelExpRede_CLASS">Data de Inicio:</label>
+									<div class="inputText_CLASS expRedText_CLASS" >
+										<input type="date" name="INICIO">
+										<div class="infoContainer_CLASS">
+											<span class="spanAjuda_CLASS">?</span>
+											<span class="tipInfo_CLASS tipInfoExp_CLASS">Data de Inicio</span>
+										</div>
+									</div>
+									<label for="FIM" class="labelExpRede_CLASS">Data de Fim:</label>
+									<div class="inputText_CLASS expRedText_CLASS" >
+										<input type="date" name="FIM">
+										<div class="infoContainer_CLASS">
+											<span class="spanAjuda_CLASS">?</span>
+											<span class="tipInfo_CLASS tipInfoExp_CLASS" id="tipName_ID">Data de Fim</span>
+										</div>
+									</div>
+									<div style="display: flex;">
+										<button class="btnSub_CLASS">CANCELAR</button>
+										<button class="btnSub_CLASS" type="submit" >ATUALIZAR</button>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 					<hr>
 				</div>
 				<table>
 					<tr>
-						<th>ESCRITORIO</th>
+						<th class="td30_CLASS">ESCRITORIO</th>
 						<th>DESCRIÇÃO</th>
-						<th>INÍCIO</th>
-						<th>FIM</th>
-						<th>ALTERAR</th>
-						<th>DELETARS</th>
+						<th class="td10_CLASS">INÍCIO</th>
+						<th class="td10_CLASS">FIM</th>
+						<th class="td5_CLASS">ALT.</th>
+						<th class="td5_CLASS">DEL.</th>
 					</tr>
 					<tr>
 						<th></th>
 						<th></th>
 						<th></th>
 						<th></th>
-						<th></th>
-						<th></th>
+						<th><button >ALT.</button></th>
+						<th><button >DEL.</button></th>
 					</tr>
 				</table>
 			</div>
@@ -172,22 +222,52 @@
 				<div>
 					<div class="inputText_CLASS" >
 						<p>REDES</p>
-						<button class="btnAdd_CLASS">+</button>
+						<div class="plusBtnDiv_CLASS">
+							<button class="btnAdd_CLASS">+</button>
+							<div class="formPop_CLASS" id="addRede_ID">
+								<form action="" method="post" class="formExpRede_CLASS">
+									<div class="titForm_CLASS">
+										<p>Rede</p>
+										<hr>
+									</div>
+									<label for="REDE" class="labelExpRede_CLASS">Rede:</label>
+									<div class="inputText_CLASS expRedText_CLASS" >
+										<input type="text" name="REDE" value="FaceBook">
+										<div class="infoContainer_CLASS">
+											<span class="spanAjuda_CLASS">?</span>
+											<span class="tipInfo_CLASS tipInfoExp_CLASS">Rede</span>
+										</div>
+									</div>
+									<label for="LINK" class="labelExpRede_CLASS">Link</label>
+									<div class="inputText_CLASS expRedText_CLASS" >
+										<input type="text" name="LINK" >
+										<div class="infoContainer_CLASS">
+											<span class="spanAjuda_CLASS">?</span>
+											<span class="tipInfo_CLASS tipInfoExp_CLASS">Link</span>
+										</div>
+									</div>
+									<div style="display: flex;">
+										<button class="btnSub_CLASS">CANCELAR</button>
+										<button class="btnSub_CLASS" type="submit" >ATUALIZAR</button>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 					<hr>
 				</div>
 				<table>
 					<tr>
-						<th>REDE</th>
-						<th>LINK</th>
-						<th>ALTERAR</th>
-						<th>DELETARS</th>
+						<th class="td30_CLASS">REDE</th>
+						<th >LINK</th>
+						<th class="td5_CLASS">ALT.</th>
+						<th class="td5_CLASS">DEL.</th>
 					</tr>
 					<tr>
 						<th></th>
 						<th></th>
-						<th></th>
-						<th></th>
+						<th><button >ALT.</button></th>
+						<th><button >DEL.</button></th>
 					</tr>
 				</table>
 			</div>
