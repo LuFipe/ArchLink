@@ -7,19 +7,152 @@
 	<link rel="stylesheet" href="./CSS/PERFIL_style.css">
 	<title>Estudante</title>
 </head>
-<body>
+<body onload="showNotMsg('tabMsg_ID','msgButn_ID') , showSect('Perf_ID')">
 	<header></header>
-	<main>
+	<main >
 		<div id="smokeScreen_ID"></div>
-		<section id="PerfNot_ID">
-			<div class="super_CLASS" id="superPerf_ID"></div>
-			<section class="sectionBorder_CLASS" id="Perf_ID">
-				<form id="alterImgPerf_ID" action="" method="post" enctype="multipart/form-data">
-					<div id="imgPerfil_ID"></div>
-					<input type="file" name="IMGPERFIL">
-					<button class="btnSub_CLASS" type="submit">ATUALIZAR</button>
+		<div class="formPop_CLASS" id="addExp_ID">
+			<form action="" method="post" class="formExpRede_CLASS">
+				<div class="titForm_CLASS">
+					<p>Experiencias</p>
+					<hr>
+				</div>
+				<label for="ESCRITORIO" class="labelExpRede_CLASS">Escritório:</label>
+				<div class="inputText_CLASS expRedText_CLASS" >
+					<input type="text" name="ESCRITORIO" value="Escritório">
+					<div class="infoContainer_CLASS">
+						<span class="spanAjuda_CLASS">?</span>
+						<span class="tipInfo_CLASS tipInfoExp_CLASS">Escritório</span>
+					</div>
+				</div>
+				<label for="DESCRICAO" class="labelExpRede_CLASS">Descrição:</label>
+				<div class="inputText_CLASS expRedText_CLASS" >
+					<input type="text" name="DESCRICAO" style="height: 10em;text-align: left;" value="Escreva algo sobre você">
+					<div class="infoContainer_CLASS">
+						<span class="spanAjuda_CLASS">?</span>
+						<span class="tipInfo_CLASS tipInfoExp_CLASS">Descrição</span>
+					</div>
+				</div>
+				<label for="INICIO" class="labelExpRede_CLASS">Data de Inicio:</label>
+				<div class="inputText_CLASS expRedText_CLASS" >
+					<input type="date" name="INICIO">
+					<div class="infoContainer_CLASS">
+						<span class="spanAjuda_CLASS">?</span>
+						<span class="tipInfo_CLASS tipInfoExp_CLASS">Data de Inicio</span>
+					</div>
+				</div>
+				<label for="FIM" class="labelExpRede_CLASS">Data de Fim:</label>
+				<div class="inputText_CLASS expRedText_CLASS" >
+					<input type="date" name="FIM">
+					<div class="infoContainer_CLASS">
+						<span class="spanAjuda_CLASS">?</span>
+						<span class="tipInfo_CLASS tipInfoExp_CLASS" id="tipName_ID">Data de Fim</span>
+					</div>
+				</div>
+				<div style="display: flex;">
+					<button class="btnSub_CLASS">CANCELAR</button>
+					<button class="btnSub_CLASS" type="submit" >ATUALIZAR</button>
+				</div>
+			</form>
+		</div>
+		<div class="formPop_CLASS" id="addRede_ID">
+			<form action="" method="post" class="formExpRede_CLASS">
+				<div class="titForm_CLASS">
+					<p>Rede</p>
+					<hr>
+				</div>
+				<label for="REDE" class="labelExpRede_CLASS">Rede:</label>
+				<div class="inputText_CLASS expRedText_CLASS" >
+					<input type="text" name="REDE" value="FaceBook">
+					<div class="infoContainer_CLASS">
+						<span class="spanAjuda_CLASS">?</span>
+						<span class="tipInfo_CLASS tipInfoExp_CLASS">Rede</span>
+					</div>
+				</div>
+				<label for="LINK" class="labelExpRede_CLASS">Link</label>
+				<div class="inputText_CLASS expRedText_CLASS" >
+					<input type="text" name="LINK" >
+					<div class="infoContainer_CLASS">
+						<span class="spanAjuda_CLASS">?</span>
+						<span class="tipInfo_CLASS tipInfoExp_CLASS">Link</span>
+					</div>
+				</div>
+				<div style="display: flex;">
+					<button class="btnSub_CLASS">CANCELAR</button>
+					<button class="btnSub_CLASS" type="submit" >ATUALIZAR</button>
+				</div>
+			</form>
+		</div>
+		<div class="formPop_CLASS" id="altPerfil_ID">
+			<form action="" method="post" class="formExpRede_CLASS">
+				<div class="titForm_CLASS">
+					<p>Perfil</p>
+					<hr>
+				</div>
+				<label for="PERFIL" class="labelExpRede_CLASS">Perfil:</label>
+				<div class="inputText_CLASS expRedText_CLASS" >
+					<input type="text" name="PERFIL" style="height: 15em;text-align: left;" value="Escreva algo sobre você">
+					<div class="infoContainer_CLASS">
+						<span class="spanAjuda_CLASS">?</span>
+						<span class="tipInfo_CLASS tipInfoExp_CLASS">Perfil</span>
+					</div>
+				</div>
+				<div style="margin-top: 1em;">
+					<label for="">Status:</label>
+					<hr>
+					<div class="divFlex_CLASS">
+						<input class="radio_CLASS" type="radio" name="STATUS" value="PROCURANDO" onclick="hideTrabalhando()" checked >
+						<label for="STATUS">PROCURANDO</label>
+					</div>
+					<div class="divFlex_CLASS">
+						<input class="radio_CLASS" type="radio" name="STATUS" value="TRABALHANDO" onclick="showTrabalhando()">
+						<label for="STATUS">TRABALHANDO</label>
+					</div>
 
-				</form>
+				</div>
+				<div id="trabalhando_ID">
+					<label for="ESCRITORIO" class="labelExpRede_CLASS">Escritório:</label>
+					<div class="inputText_CLASS expRedText_CLASS" >
+						<input type="text" name="ESCRITORIO" value="Escritório">
+						<div class="infoContainer_CLASS">
+							<span class="spanAjuda_CLASS">?</span>
+							<span class="tipInfo_CLASS tipInfoExp_CLASS">Escritório</span>
+						</div>
+					</div>
+					<label for="DESCRICAO" class="labelExpRede_CLASS">Descrição:</label>
+					<div class="inputText_CLASS expRedText_CLASS" >
+						<input type="text" name="DESCRICAO" style="height: 10em;text-align: left;" value="Escreva algo sobre você">
+						<div class="infoContainer_CLASS">
+							<span class="spanAjuda_CLASS">?</span>
+							<span class="tipInfo_CLASS tipInfoExp_CLASS">Descrição</span>
+						</div>
+					</div>
+					<label for="INICIO" class="labelExpRede_CLASS">Data de Inicio:</label>
+					<div class="inputText_CLASS expRedText_CLASS" >
+						<input type="date" name="INICIO">
+						<div class="infoContainer_CLASS">
+							<span class="spanAjuda_CLASS">?</span>
+							<span class="tipInfo_CLASS tipInfoExp_CLASS">Data de Inicio</span>
+						</div>
+					</div>
+				</div>
+				<div style="display: flex;">
+					<button class="btnSub_CLASS">CANCELAR</button>
+					<button class="btnSub_CLASS" type="submit" >ATUALIZAR</button>
+				</div>
+			</form>
+		</div>
+		<section id="PerfNot_ID">
+			<div class="super_CLASS" id="superPerf_ID" onclick="showSect('Perf_ID')"></div>
+			<section class="sectionBorder_CLASS" id="Perf_ID">
+				<div id="alterImgPerf_ID">
+					<div id="imgPerfil_ID"></div>
+					<form id="formImg_ID" action="" method="post" enctype="multipart/form-data">
+						<input type="file" name="IMGPERFIL" style="height: 2.1em;">
+						<button class="btnSub_CLASS" type="submit">ATUALIZAR</button>
+					</form>
+					<button class="btnSub_CLASS" id="btnAltPerf_ID" onclick="showForm('altPerfil_ID')">ATUALIZAR PERFIL</button>
+				</div>
 				<form id="alterInst_ID" action="" method="post">
 					<div class="titForm_CLASS">
 						<p>DADOS PESSOAIS</p>
@@ -113,14 +246,14 @@
 					<button class="btnSub_CLASS" id="btnAlterArq_ID" type="submit">ATUALIZAR</button>
 				</form>						
 			</section>
-			<div class="super_CLASS" id="superNot_ID"></div>
+			<div class="super_CLASS" id="superNot_ID" onclick="showSect('Not_ID')"></div>
 			<section class="sectionBorder_CLASS" id="Not_ID">
 				<div style="display: flex;">
-					<button class="notButn_CLASS">MENSAGENS</button>
-					<button class="notButn_CLASS">NOTIFICAÇÕES</button>
+					<button class="notButn_CLASS" id="msgButn_ID" onclick="showNotMsg('tabMsg_ID','msgButn_ID')">MENSAGENS</button>
+					<button class="notButn_CLASS" id="notButn_ID" onclick="showNotMsg('tabNot_ID','notButn_ID')">NOTIFICAÇÕES</button>
 				</div>
-				<div class="div_CLASS">
-					<table>
+				<div class="div_CLASS divMsgNot_CLASS">
+					<table id="tabMsg_ID">
 						<tr>
 							<td class="td30_CLASS">REMETENTE</td> 
 							<td>ASSUNTO</td> 
@@ -134,8 +267,22 @@
 							<th></th>
 						</tr>
 					</table>
+					<table id="tabNot_ID">
+						<tr>
+							<td class="td30_CLASS">TITULO</td> 
+							<td>RESUMO</td> 
+							<td class="td10_CLASS">HORA</td> 
+							<td class="td10_CLASS">DATA</td>
+						</tr>
+						<tr>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+					</table>
 				</div>
-				<div class="div_CLASS" style="grid-row-start: 4; border-radius: 0 0 2em 2em;">
+				<div class="div_CLASS divMsgNot_CLASS" style="grid-row-start: 4; border-radius: 0 0 2em 2em;">
 					<div id="viz_ID">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit non, praesentium quam animi quaerat? Soluta recusandae odit numquam assumenda repudiandae eveniet, necessitatibus doloremque commodi, accusamus fugit natus officiis neque?
 					</div>
@@ -143,58 +290,14 @@
 
 			</section>
 		</section>
-		<div class="super_CLASS" id="superER_ID"></div>
+		<div class="super_CLASS" id="superER_ID" onclick="showSect('expRede_ID')"></div>
 		<section class="sectionBorder_CLASS" id="expRede_ID">
 			<div class="div_CLASS erDiv_CLASS" id="divTabEXP_ID">
 				<div>
 					<div class="inputText_CLASS" >
 						<p>EXPERIENCIAS</p>
 						<div class="plusBtnDiv_CLASS">
-							<button class="btnAdd_CLASS">+</button>
-							<div class="formPop_CLASS" id="addExp_ID">
-								<form action="" method="post" class="formExpRede_CLASS">
-									<div class="titForm_CLASS">
-										<p>Experiencias</p>
-										<hr>
-									</div>
-									<label for="ESCRITORIO" class="labelExpRede_CLASS">Escritório:</label>
-									<div class="inputText_CLASS expRedText_CLASS" >
-										<input type="text" name="ESCRITORIO" value="Escritório">
-										<div class="infoContainer_CLASS">
-											<span class="spanAjuda_CLASS">?</span>
-											<span class="tipInfo_CLASS tipInfoExp_CLASS">Escritório</span>
-										</div>
-									</div>
-									<label for="DESCRICAO" class="labelExpRede_CLASS">Descrição:</label>
-									<div class="inputText_CLASS expRedText_CLASS" >
-										<input type="text" name="DESCRICAO" style="height: 10em;text-align: left;" value="Escreva algo sobre você">
-										<div class="infoContainer_CLASS">
-											<span class="spanAjuda_CLASS">?</span>
-											<span class="tipInfo_CLASS tipInfoExp_CLASS">Descrição</span>
-										</div>
-									</div>
-									<label for="INICIO" class="labelExpRede_CLASS">Data de Inicio:</label>
-									<div class="inputText_CLASS expRedText_CLASS" >
-										<input type="date" name="INICIO">
-										<div class="infoContainer_CLASS">
-											<span class="spanAjuda_CLASS">?</span>
-											<span class="tipInfo_CLASS tipInfoExp_CLASS">Data de Inicio</span>
-										</div>
-									</div>
-									<label for="FIM" class="labelExpRede_CLASS">Data de Fim:</label>
-									<div class="inputText_CLASS expRedText_CLASS" >
-										<input type="date" name="FIM">
-										<div class="infoContainer_CLASS">
-											<span class="spanAjuda_CLASS">?</span>
-											<span class="tipInfo_CLASS tipInfoExp_CLASS" id="tipName_ID">Data de Fim</span>
-										</div>
-									</div>
-									<div style="display: flex;">
-										<button class="btnSub_CLASS">CANCELAR</button>
-										<button class="btnSub_CLASS" type="submit" >ATUALIZAR</button>
-									</div>
-								</form>
-							</div>
+							<button class="btnAdd_CLASS" onclick="showForm('addExp_ID')">+</button>
 						</div>
 					</div>
 					<hr>
@@ -223,35 +326,8 @@
 					<div class="inputText_CLASS" >
 						<p>REDES</p>
 						<div class="plusBtnDiv_CLASS">
-							<button class="btnAdd_CLASS">+</button>
-							<div class="formPop_CLASS" id="addRede_ID">
-								<form action="" method="post" class="formExpRede_CLASS">
-									<div class="titForm_CLASS">
-										<p>Rede</p>
-										<hr>
-									</div>
-									<label for="REDE" class="labelExpRede_CLASS">Rede:</label>
-									<div class="inputText_CLASS expRedText_CLASS" >
-										<input type="text" name="REDE" value="FaceBook">
-										<div class="infoContainer_CLASS">
-											<span class="spanAjuda_CLASS">?</span>
-											<span class="tipInfo_CLASS tipInfoExp_CLASS">Rede</span>
-										</div>
-									</div>
-									<label for="LINK" class="labelExpRede_CLASS">Link</label>
-									<div class="inputText_CLASS expRedText_CLASS" >
-										<input type="text" name="LINK" >
-										<div class="infoContainer_CLASS">
-											<span class="spanAjuda_CLASS">?</span>
-											<span class="tipInfo_CLASS tipInfoExp_CLASS">Link</span>
-										</div>
-									</div>
-									<div style="display: flex;">
-										<button class="btnSub_CLASS">CANCELAR</button>
-										<button class="btnSub_CLASS" type="submit" >ATUALIZAR</button>
-									</div>
-								</form>
-							</div>
+							<button class="btnAdd_CLASS" onclick="showForm('addRede_ID')">+</button>
+							
 						</div>
 					</div>
 					<hr>
@@ -274,5 +350,6 @@
 		</section>
 	</main>
 	<footer></footer>
+	<script src="./JS/perfil_JS.js"></script>
 </body>
 </html>
