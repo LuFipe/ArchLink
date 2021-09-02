@@ -9,24 +9,131 @@
 </head>
 <body>
 		<header>
-				AQUI COMEÇA O SITE
+				<h1 id="titulo_ID">ArqCon</h1>
+				<div id="acesso_ID">
+					<a class="acessoLink_CLASS" href="">Perfil</a>
+					<a class="acessoLink_CLASS" href="">Sair</a>
+				</div>
+				<div id="filtros_ID">
+					<div class="divFiltro_CLASS">
+						<p class="pFiltro_CLASS">Filtro</p>
+						<button class="btnFiltro_CLASS">Ordem Alphabetica</button>
+						<button class="btnFiltro_CLASS">Ordem Randomica</button>
+					</div>
+					<div class="divFiltro_CLASS">
+						<p class="pFiltro_CLASS">Esudante</p>
+						<button class="btnFiltro_CLASS">Estagiando</button>
+						<button class="btnFiltro_CLASS">Procurando</button>
+					</div>
+					<div class="divFiltro_CLASS">
+						<p class="pFiltro_CLASS">Profissional</p>
+						<button class="btnFiltro_CLASS">Ofertando Vaga</button>
+						<button class="btnFiltro_CLASS">Cheio</button>
+					</div>
+				</div>
 		</header>
 		<main>
 				<section data-aos="fade-up">
 						<div class="perfil_CLASS">
 								<div class="divImg_CLASS">
-									<img src="./IMAGES/Perfil_LF.png" alt="PERFIL_LF">
-								<!--
-								S-->	
+									<img src="./IMAGES/Perfil_LF.png" alt="PERFIL_LF">	
 								</div>
 								<div class="descri_CLASS">
-										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias modi fuga tempora velit, dolor fugit ut, nesciunt quia amet enim sequi iste vero? Fugiat nostrum vero tempora modi quas ipsam!</p>
-										<a href='./PortFolio_PC.pdf'> Portfolio Digital </a>
-										<a href="http://lufipe.github.io/ArchiViz-LuizFelipe">Portfolio Online</a>
-										<button onclick="showDesc('flavorLF_ID')">Mostrar mais</button>
+										<button onclick="switchDescCont('descPerf_ID')">DESCRIÇÂO</button>
+										<button onclick="switchDescCont('contPerf_ID')">CONTATO</button>
+										<button onclick="switchDescCont('msgPerf_ID')">MENSAGEM</button>
+										<p style="grid-row: 2/3; grid-column: 1/4; margin: .5em;">LUIZ FELIPE CASTRO COELHO</p>
+										<div class="descPerf_CLASS" id="descPerf_ID"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatum. Inventore est quo vitae molestias animi! Dolor nam totam aliquid culpa veritatis dicta omnis reiciendis iusto nisi dignissimos. Unde, eligendi?</div>
+										<div class="contPerf_ClASS" id="contPerf_ID">
+											<div class="divContPerf_CLASS">
+												<label for="">Instituto:</label>
+												<p>UniJuazeiro</p>
+												<label for="">Semestre:</label>
+												<p>9°</p>
+											</div>
+											<div class="divContPerf_CLASS">
+												<label for="">Status:</label>
+												<p>Procurando</p>
+											</div>
+											<div class="divContPerf_CLASS">
+												<label for="">Numero:</label>
+												<p>(88)999165080</p>
+												<label for="">Email:</label>
+												<p>luizfelipecastrocoelho@gmail.com</p>
+											</div>
+											<div class="divContPerf_CLASS">
+												<label for="">Redes:</label>
+												<a href="https://www.linkedin.com/in/luiz-coelho-a83711a5">Linkedin</a>
+												<a href="https://www.instagram.com/luizfelipecastrocoelho/">Instagram</a>
+												<a href="https://github.com/LuFipe">GitHub</a>
+											</div>
+											<div class="divContPerf_CLASS">
+												<label for="">Formação:</label>
+												<a href="./Currículo.pdf">Currículo_Digital</a>
+												<a href="./PortFolio_PC.pdf">PortFolio_Digital</a>
+												<a href="http:lufipe.github.io/ArchiViz-LuizFelipe">Site</a>
+											</div>
+										</div>
+										<div class="msgPerf_CLASS" id="msgPerf_ID"> 
+											<form action="" method="post">
+												<label for="">Mensagem:</label>
+												<textarea name="mensagem_NAME" id="" cols="35" rows="10"></textarea>
+												<button type="submit">ENVIAR</button>
+											</form>
+										</div>
+										<button onclick="showDesc('flavorLF_ID')" style="grid-row-start: 4; grid-column: 1/4;">EXPERIENCIA</button>
 								</div>
 						</div>
-						<div class="flavorText_CLASS" id="flavorLF_ID">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti possimus fugit autem, neque sint odit ab, amet minus blanditiis veritatis nisi obcaecati sequi minima perferendis dolor ratione provident eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta fuga laudantium officiis, nihil neque nesciunt placeat quibusdam commodi corporis exercitationem error, ut distinctio aperiam, mollitia veritatis! Fugit, vitae quo?</div>
+						<div class="expDiv_CLASS" id="flavorLF_ID">
+							<div class="divExpPerf_CLASS">
+								<label class="labelExpClass" for="">Escritorio:</label>
+								<p class="pExp_CLASS">Um Escritorio Acula</p>
+								<label class="labelExpClass" for="">Descrição:</label>
+								<p class="pExp_CLASS">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione officiis iure ex, est, aperiam alias nobis voluptates hic doloribus voluptatum harum veritatis non beatae dolor, quae facere necessitatibus amet.</p>
+								<label class="labelExpClass" for="">Duração:</label>
+								<p class="pExp_CLASS">N meses</p>
+							</div>
+							<div class="divExpPerf_CLASS">
+								<label class="labelExpClass" for="">Escritorio:</label>
+								<p class="pExp_CLASS">Um Escritorio Acula</p>
+								<label class="labelExpClass" for="">Descrição:</label>
+								<p class="pExp_CLASS">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione officiis iure ex, est, aperiam alias nobis voluptates hic doloribus voluptatum harum veritatis non beatae dolor, quae facere necessitatibus amet.</p>
+								<label class="labelExpClass" for="">Duração:</label>
+								<p class="pExp_CLASS">N meses</p>
+							</div>
+							<div class="divExpPerf_CLASS">
+								<label class="labelExpClass" for="">Escritorio:</label>
+								<p class="pExp_CLASS">Um Escritorio Acula</p>
+								<label class="labelExpClass" for="">Descrição:</label>
+								<p class="pExp_CLASS">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione officiis iure ex, est, aperiam alias nobis voluptates hic doloribus voluptatum harum veritatis non beatae dolor, quae facere necessitatibus amet.</p>
+								<label class="labelExpClass" for="">Duração:</label>
+								<p class="pExp_CLASS">N meses</p>
+							</div>
+							<div class="divExpPerf_CLASS">
+								<label class="labelExpClass" for="">Escritorio:</label>
+								<p class="pExp_CLASS">Um Escritorio Acula</p>
+								<label class="labelExpClass" for="">Descrição:</label>
+								<p class="pExp_CLASS">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione officiis iure ex, est, aperiam alias nobis voluptates hic doloribus voluptatum harum veritatis non beatae dolor, quae facere necessitatibus amet.</p>
+								<label class="labelExpClass" for="">Duração:</label>
+								<p class="pExp_CLASS">N meses</p>
+							</div>
+							<div class="divExpPerf_CLASS">
+								<label class="labelExpClass" for="">Escritorio:</label>
+								<p class="pExp_CLASS">Um Escritorio Acula</p>
+								<label class="labelExpClass" for="">Descrição:</label>
+								<p class="pExp_CLASS">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione officiis iure ex, est, aperiam alias nobis voluptates hic doloribus voluptatum harum veritatis non beatae dolor, quae facere necessitatibus amet.</p>
+								<label class="labelExpClass" for="">Duração:</label>
+								<p class="pExp_CLASS">N meses</p>
+							</div>
+							<div class="divExpPerf_CLASS">
+								<label class="labelExpClass" for="">Escritorio:</label>
+								<p class="pExp_CLASS">Um Escritorio Acula</p>
+								<label class="labelExpClass" for="">Descrição:</label>
+								<p class="pExp_CLASS">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ratione officiis iure ex, est, aperiam alias nobis voluptates hic doloribus voluptatum harum veritatis non beatae dolor, quae facere necessitatibus amet.</p>
+								<label class="labelExpClass" for="">Duração:</label>
+								<p class="pExp_CLASS">N meses</p>
+							</div>
+						</div>
 				</section>
 				<section style="flex-direction: row-reverse;" data-aos="fade-up">
 					<div class="perfil_CLASS">
@@ -42,7 +149,16 @@
 							-->
 						</div>
 					</div>
-					<div class="flavorText_CLASS" id="flavorRayra_ID">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti possimus fugit autem, neque sint odit ab, amet minus blanditiis veritatis nisi obcaecati sequi minima perferendis dolor ratione provident eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias voluptates, cupiditate molestiae natus a porro ratione aut consectetur, et dolores cum perferendis enim magni recusandae laborum quos? Ipsum, necessitatibus.</div>
+					<div class="expDiv_CLASS" id="flavorRayra_ID">
+						<div class="expText_CLASS">
+							<div class="divContPerf_CLASS">
+								<label for="">Instituto:</label>
+								<p>UniJuazeiro</p>
+								<label for="">Semestre:</label>
+								<p>9°</p>
+							</div>
+						</div>
+					</div>
 
 				</section>
 				<section data-aos="fade-up">
@@ -68,12 +184,25 @@
 		<script>
 			function showDesc(desc_ID){
 				let desc = window.document.getElementById(desc_ID);
-				if (desc.style.display == 'flex') {
+				if (desc.style.display == 'grid') {
 					desc.style.display = 'none';
 				}
 				else if ((desc.style.display == '')||(desc.style.display == 'none')) {
-					desc.style.display = 'flex';
+					desc.style.display = 'grid';
 				}
+			}
+
+			function switchDescCont(ID){
+				let desc = window.document.getElementById("descPerf_ID");
+				let cont = window.document.getElementById("contPerf_ID");
+				let msg = window.document.getElementById("msgPerf_ID")
+				let tab = window.document.getElementById(ID);
+
+				desc.style.display = "none";
+				cont.style.display = "none";
+				msg.style.display = "none";
+
+				tab.style.display = "flex";
 			}
 		</script>
 		
